@@ -1,9 +1,10 @@
-#include <float.h>;
-#include <cfloat>;
+#include <float.h>
+#include <cfloat>
 
-#include <limits>;
-#include "stdafx.h";
-#include "Polygon.h";
+#include <limits>
+#include "stdafx.h"
+#include "Polygon.h"
+#include <vector>
 
 
 /* Fancy Constructor */
@@ -69,11 +70,8 @@ void Polygon::compareValues(int value)
 bool Polygon::isIntersecting(float objectLocation[])
 {
 	if (objectLocation[0] >= xMin && objectLocation[0] < xMax)
+		if (objectLocation[1] >= yMin && objectLocation[1] < yMax)
+			if (objectLocation[2] >= zMin && objectLocation[2] < zMax)
 		return true;
-	if (objectLocation[1] >= yMin && objectLocation[1] < yMax)
-		return true;
-	if (objectLocation[2] >= zMin && objectLocation[2] < zMax)
-		return true;
-
 	return false;
 }
