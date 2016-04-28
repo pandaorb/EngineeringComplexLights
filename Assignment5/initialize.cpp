@@ -50,9 +50,9 @@ int lightInit(void)
 
 	glShadeModel(GL_SMOOTH); /*enable smooth shading */
 	glEnable(GL_LIGHTING); /* enable lighting */
+	glEnable(GL_COLOR_MATERIAL);
 	glEnable(GL_LIGHT1);
 	glEnable(GL_NORMALIZE);
-	glEnable(GL_DEPTH_TEST); /* enable z buffer */
 
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glColor3f(0.0, 0.0, 1.0);

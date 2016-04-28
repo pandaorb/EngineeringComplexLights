@@ -129,7 +129,7 @@ void setMovement(GLfloat motion)
 	{
 		//facing mostly downwards, move down
 		studentLocation[2] += motion;
-		light_position[2] = studentLocation[2];
+		light_position[1] = -studentLocation[2];
 	}
 	else if (studentDirection >= 45 && studentDirection < 135)
 	{
@@ -141,7 +141,7 @@ void setMovement(GLfloat motion)
 	{
 		//facing mostly left, move left
 		studentLocation[2] -= motion;
-		light_position[2] = studentLocation[2];
+		light_position[1] = -studentLocation[2];
 	}
 	else if (studentDirection >= 225 && studentDirection < 315)
 	{

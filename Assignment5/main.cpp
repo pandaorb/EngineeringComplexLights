@@ -35,7 +35,7 @@ int _tmain(int argc, char** argv)
 	glutMouseFunc(mouse);
 	glutKeyboardFunc(keys);
 	glutSpecialFunc(keyboard);
-	//lightInit();
+	lightInit();
 	glEnable(GL_DEPTH_TEST); /* enable z buffer */
 	programInit();
 	glutMainLoop();
